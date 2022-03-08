@@ -6,10 +6,6 @@ export const getOrders = () => {
 export const postNewOrder = (order) => {
   return fetch('http://localhost:3001/api/v1/orders', {
     method: 'POST',
-    // body: JSON.stringify({
-    //   name: order.name,
-    //   ingredients: order.ingredients
-    // }),
     body: JSON.stringify(order),
     headers: {
       'Content-Type': 'application/json'
